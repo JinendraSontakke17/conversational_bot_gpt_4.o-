@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="main">
+        <h1>Conversational Bot</h1>
+        <div class="btn">
+            <button id="start-button" onclick="startDictation()">Start dictation</button>
+            <div id="speaker">&#x1F50A;</div>
+            <button id="stopButton" style="visibility: hidden;">Stop</button>
+        </div>
+    </div>
+    <!-- <button id="start-button" onclick="startDictation()">Start dictation</button> -->
+    <!-- <div id="speaker">&#x1F50A;</div> -->
+    <!-- <button id="stopButton" style="visibility: hidden;">Stop</button> -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
